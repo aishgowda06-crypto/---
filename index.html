@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
   <!-- SEO Meta Tags for Google Search & Hotel Indexing -->
-  <title>BuyBrigg Food Delivery - Order from Best Hotels & Restaurants</title>
-  <meta name="description" content="Order fresh meals from top partner hotels and restaurants with lightning-fast delivery on BuyBrigg. Explore our full menu with prices and ratings.">
-  <meta name="keywords" content="BuyBrigg, food delivery, hotel names, restaurant menu, online ordering, Dosa, Biriyani, Shivamogga">
+  <title>BuyBrigg Royal Food Delivery - Order from Best Hotels & Restaurants</title>
+  <meta name="description" content="Experience royal food delivery on BuyBrigg. Order fresh meals from top partner hotels with lightning-fast delivery and exclusive gourmet discounts.">
+  <meta name="keywords" content="BuyBrigg, royal food delivery, hotel names, restaurant menu, online ordering, Dosa, Biriyani, Shivamogga">
   
   <!-- Google Site Verification -->
   <meta name="google-site-verification" content="LBvlRrpJvCyk74Gce_Xwe0mQ4ccbHPqQzAQQjXWMc4w" />
@@ -24,7 +24,7 @@
     "name": "BuyBrigg Food Delivery",
     "currenciesAccepted": "INR",
     "priceRange": "₹₹",
-    "servesCuisine": "Multi-Cuisine, South Indian, North Indian, Fast Food",
+    "servesCuisine": "Multi-Cuisine, South Indian, North Indian, Fast Food, Royal Dining",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Shivamogga",
@@ -35,73 +35,100 @@
   }
   </script>
 </head>
-<body class="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-orange-500 selection:text-white pb-36 overflow-x-hidden">
+<body class="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-amber-400 selection:text-slate-950 pb-20 overflow-x-hidden">
 
-  <!-- 🌟 TOP SLIDING ANNOUNCEMENT BAR (From Everywhere) -->
-  <div id="top-announcement" class="bg-gradient-to-r from-orange-600 via-amber-500 to-orange-600 text-white text-xs sm:text-sm font-black py-2.5 px-4 text-center shadow-md relative z-50 transition-all duration-700 transform -translate-y-full flex items-center justify-center space-x-2">
-    <span>🚀 Lightning Fast Food Delivery from Best Partner Hotels! Flat ₹10 Delivery Fee! ⚡</span>
-    <button onclick="document.getElementById('top-announcement').style.display='none'" class="ml-4 text-white hover:text-slate-200 font-bold bg-black/20 px-2 py-0.5 rounded-lg text-xs">✕</button>
+  <!-- 👑 ROYAL TOP SLIDING ANNOUNCEMENT BAR -->
+  <div id="top-announcement" class="bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 text-xs sm:text-sm font-black py-3 px-4 text-center shadow-md relative z-50 transition-all duration-700 transform -translate-y-full flex items-center justify-center space-x-2 border-b border-amber-300">
+    <span>👑 ROYAL PRIVILEGE: Flat ₹10 Delivery Fee + Free Welcome Dessert on the BuyBrigg App! 🍰⚡</span>
+    <button onclick="document.getElementById('top-announcement').style.display='none'" class="ml-4 text-slate-950 hover:text-white font-bold bg-black/10 px-2 py-0.5 rounded-lg text-xs cursor-pointer">✕</button>
   </div>
 
-  <!-- 🌟 FLOATING CORNER NOTIFICATION TOAST (Bottom-Left Pop-in) -->
-  <div id="side-toast" class="fixed bottom-24 left-4 z-40 bg-white border-2 border-orange-500/40 rounded-2xl p-4 shadow-2xl max-w-xs transition-all duration-700 transform -translate-x-96 hidden sm:block">
+  <!-- 👑 FLOATING CORNER NOTIFICATION TOAST (Bottom-Left Royal Pop-in) -->
+  <div id="side-toast" class="fixed bottom-6 left-6 z-40 bg-white border-2 border-amber-400/80 rounded-3xl p-4 shadow-[0_10px_30px_rgba(245,158,11,0.25)] max-w-xs transition-all duration-700 transform -translate-x-96 hidden sm:block">
     <div class="flex items-start space-x-3">
-      <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl shrink-0 font-black">🔥</div>
+      <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500 to-yellow-400 text-slate-950 flex items-center justify-center text-xl shrink-0 font-black shadow-md">👑</div>
       <div class="space-y-1">
-        <h4 class="text-xs font-black text-slate-900">Hot Deals Available!</h4>
-        <p class="text-[11px] text-slate-600 font-medium">Order fresh Dosa, Biriyani & more via the BuyBrigg app.</p>
-        <button onclick="openDownloadModal()" class="text-[10px] font-bold text-orange-600 hover:underline">Get App Now ➔</button>
+        <h4 class="text-xs font-black text-amber-600 uppercase tracking-wider">Royal Recommendation</h4>
+        <p class="text-[11px] text-slate-700 font-semibold">Top local hotels are serving fresh royal feasts right now!</p>
+        <button onclick="openDownloadModal()" class="text-[11px] font-black text-amber-600 hover:text-amber-700 underline cursor-pointer">Install App & Claim Offer ➔</button>
       </div>
-      <button onclick="document.getElementById('side-toast').style.display='none'" class="text-slate-400 hover:text-slate-600 text-xs font-bold">✕</button>
+      <button onclick="document.getElementById('side-toast').style.display='none'" class="text-slate-400 hover:text-slate-700 text-xs font-bold cursor-pointer">✕</button>
     </div>
   </div>
 
-  <!-- MAIN APP DOWNLOAD MODAL (Center Popup) -->
+  <!-- 👑 SIDEBAR TEMPTING POPUP BANNER (Bottom-Right Floating Prompt) -->
+  <div id="corner-popup" class="fixed bottom-6 right-6 z-40 bg-gradient-to-br from-amber-500 to-yellow-500 text-slate-950 rounded-3xl p-5 shadow-[0_10px_40px_rgba(245,158,11,0.3)] max-w-sm transition-all duration-700 transform translate-y-96 hidden md:block border-2 border-yellow-200">
+    <div class="space-y-2">
+      <div class="flex justify-between items-center">
+        <span class="bg-slate-950 text-amber-400 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase">⚡ Flash Deal</span>
+        <button onclick="document.getElementById('corner-popup').style.display='none'" class="text-slate-950 hover:text-white font-bold text-xs cursor-pointer">✕</button>
+      </div>
+      <h4 class="text-sm font-black leading-snug">Hungry for Royal Delicacies? 🍗🥞</h4>
+      <p class="text-xs font-semibold text-slate-900">Download the BuyBrigg Android App now to unlock instant ordering and secret chef specials!</p>
+      <a href="https://play.google.com/store/apps/details?id=com.buybrigg.app&hl=en" target="_blank" rel="noopener" class="block w-full bg-slate-950 hover:bg-slate-900 text-amber-400 font-black text-xs py-3 px-4 rounded-2xl text-center shadow-lg transition">
+        Get App on Google Play ▶️
+      </a>
+    </div>
+  </div>
+
+  <!-- 👑 TOP-RIGHT BANNER POPUP (Welcome Alert) -->
+  <div id="top-right-alert" class="fixed top-20 right-6 z-40 bg-white border-2 border-amber-400 rounded-2xl p-4 shadow-2xl max-w-xs transition-all duration-700 transform translate-x-96 hidden lg:block">
+    <div class="flex items-center space-x-3">
+      <div class="text-2xl">🎉</div>
+      <div class="space-y-0.5">
+        <h5 class="text-xs font-black text-slate-900">Free Delivery Voucher!</h5>
+        <p class="text-[10px] text-slate-600 font-medium">Use code <span class="font-bold text-amber-600">ROYAL10</span> on the app.</p>
+      </div>
+      <button onclick="document.getElementById('top-right-alert').style.display='none'" class="text-slate-400 hover:text-slate-700 text-xs font-bold ml-2">✕</button>
+    </div>
+  </div>
+
+  <!-- MAIN APP DOWNLOAD MODAL (Center Royal Popup) -->
   <div id="download-modal" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white border-2 border-orange-500/40 rounded-[32px] p-6 sm:p-8 max-w-md w-full space-y-6 shadow-2xl text-center relative overflow-hidden animate-fadeIn">
-      <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-red-500 to-orange-500"></div>
+    <div class="bg-white border-2 border-amber-400 rounded-[36px] p-6 sm:p-8 max-w-md w-full space-y-6 shadow-2xl text-center relative overflow-hidden animate-fadeIn">
+      <div class="absolute top-0 left-0 right-0 h-2.5 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500"></div>
       
-      <div class="w-20 h-20 bg-gradient-to-tr from-red-500 to-orange-500 text-white rounded-3xl flex items-center justify-center mx-auto shadow-xl text-3xl font-black">
-        📱
+      <div class="w-20 h-20 bg-gradient-to-tr from-amber-500 to-yellow-400 text-slate-950 rounded-3xl flex items-center justify-center mx-auto shadow-xl text-3xl font-black">
+        👑
       </div>
       
       <div class="space-y-2">
-        <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Download BuyBrigg App to Order!</h3>
+        <h3 class="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">Step into Royal Ordering!</h3>
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
-          Ordering directly through the web platform is disabled. Please download our official Android app or use our web platform optimized for iPhone users!
+          To maintain royal speed and secure checkout, direct web ordering is reserved for our app users. Download the official BuyBrigg Android app or use our iPhone web platform!
         </p>
       </div>
 
       <div class="space-y-3 pt-2">
-        <a href="https://play.google.com/store/apps/details?id=com.buybrigg.app&hl=en" target="_blank" rel="noopener" class="w-full bg-slate-950 hover:bg-slate-900 text-white font-black text-xs sm:text-sm py-3.5 sm:py-4 px-6 rounded-2xl shadow-xl transition-all flex items-center justify-center space-x-3">
+        <a href="https://play.google.com/store/apps/details?id=com.buybrigg.app&hl=en" target="_blank" rel="noopener" class="w-full bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 text-slate-950 font-black text-xs sm:text-sm py-4 px-6 rounded-2xl shadow-xl transition-all flex items-center justify-center space-x-3 cursor-pointer">
           <span class="text-base sm:text-lg">▶️</span>
           <span>Get it on Google Play</span>
         </a>
-        <a href="https://food-30d.pages.dev" target="_blank" rel="noopener" class="w-full bg-slate-100 hover:bg-slate-200 border-2 border-slate-300 text-slate-900 font-extrabold text-xs sm:text-sm py-3.5 sm:py-4 px-6 rounded-2xl transition-all flex items-center justify-center space-x-3">
+        <a href="https://food-30d.pages.dev" target="_blank" rel="noopener" class="w-full bg-slate-100 hover:bg-slate-200 border-2 border-slate-300 text-slate-900 font-extrabold text-xs sm:text-sm py-4 px-6 rounded-2xl transition-all flex items-center justify-center space-x-3 cursor-pointer">
           <span class="text-base sm:text-lg">🍎</span>
           <span>Open Web App for iPhone Users</span>
         </a>
       </div>
 
       <button onclick="closeDownloadModal()" class="text-xs sm:text-sm text-slate-400 hover:text-slate-700 font-bold pt-2 cursor-pointer transition">
-        Close & Browse Menu
+        Close & Continue Browsing Menu
       </button>
     </div>
   </div>
 
   <!-- HEADER / HERO SECTION -->
-  <header class="w-full bg-white border-b-2 border-orange-100 sticky top-0 z-40 shadow-sm">
+  <header class="w-full bg-white border-b-2 border-amber-200 sticky top-0 z-40 shadow-sm backdrop-blur-md bg-white/95">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-red-500 to-orange-500 flex items-center justify-center text-2xl shadow-md text-white font-black">🍲</div>
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500 to-yellow-400 flex items-center justify-center text-2xl shadow-md text-slate-950 font-black">👑</div>
         <div>
-          <h1 class="text-lg sm:text-xl font-black tracking-wider text-slate-950">BUY<span class="text-orange-600">BRIGG</span></h1>
-          <p class="text-[10px] text-orange-600 font-extrabold uppercase tracking-widest">Partner Hotels Delivery</p>
+          <h1 class="text-lg sm:text-xl font-black tracking-wider text-slate-950">BUY<span class="text-amber-600">BRIGG</span></h1>
+          <p class="text-[10px] text-amber-600 font-extrabold uppercase tracking-widest">Royal Partner Hotels Delivery</p>
         </div>
       </div>
       <div class="flex items-center space-x-2">
-        <span class="hidden sm:inline-block text-xs bg-orange-50 text-orange-800 px-3 py-1.5 rounded-xl border-2 border-orange-200 font-black">⚡ Flat ₹10 Delivery</span>
-        <button onclick="openDownloadModal()" class="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white text-xs font-black px-4 py-2.5 rounded-xl shadow-md transition cursor-pointer">
+        <span class="hidden sm:inline-block text-xs bg-amber-50 text-amber-800 px-3 py-1.5 rounded-xl border-2 border-amber-200 font-black">⚡ Flat ₹10 Delivery</span>
+        <button onclick="openDownloadModal()" class="bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 text-slate-950 text-xs font-black px-4 py-2.5 rounded-xl shadow-md transition cursor-pointer">
           Get App 📱
         </button>
       </div>
@@ -111,33 +138,33 @@
   <!-- MAIN CONTAINER -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
     
-    <!-- 🌟 GORGEOUS LIGHT FOOD ORDERING BANNER -->
-    <section class="relative bg-gradient-to-r from-sky-100 via-orange-50 to-amber-100 border-2 border-orange-200 rounded-[32px] p-6 sm:p-10 shadow-lg overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="absolute -right-10 -bottom-10 text-9xl opacity-10 select-none">🍕</div>
+    <!-- 👑 GORGEOUS LIGHT ROYAL FOOD ORDERING BANNER -->
+    <section class="relative bg-gradient-to-r from-amber-50 via-orange-50 to-yellow-100 border-2 border-amber-300 rounded-[36px] p-6 sm:p-10 shadow-lg overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="absolute -right-10 -bottom-10 text-9xl opacity-10 select-none">👑</div>
       <div class="space-y-3 z-10 text-center md:text-left">
-        <span class="bg-orange-500 text-white text-[10px] sm:text-xs font-black px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Hot & Fresh Meals</span>
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-950 tracking-tight">Order Delicious Food From Top Hotels!</h2>
+        <span class="bg-amber-500 text-slate-950 text-[10px] sm:text-xs font-black px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">👑 Royal Dining Experience</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-950 tracking-tight">Savor Royal Delicacies From Top Hotels!</h2>
         <p class="text-xs sm:text-sm text-slate-700 font-medium max-w-xl">
-          Craving Dosa, Idli, Biriyani, or Fast Food? Browse our complete catalog with live hotel prices and get lightning-fast delivery straight to your door!
+          Experience elite dining delivered lightning-fast to your doorstep. Browse authentic South Indian Dosa, aromatic Biriyani, and gourmet dishes with live hotel pricing!
         </p>
       </div>
       <div class="z-10 shrink-0">
-        <button onclick="openDownloadModal()" class="bg-slate-950 hover:bg-slate-900 text-white font-black text-sm sm:text-base px-7 py-4 rounded-2xl shadow-xl transition transform hover:scale-105 active:scale-95 cursor-pointer uppercase tracking-wide border-2 border-slate-800">
-          🔥 Order via App Now ➔
+        <button onclick="openDownloadModal()" class="bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 text-slate-950 font-black text-sm sm:text-base px-7 py-4 rounded-2xl shadow-xl transition transform hover:scale-105 active:scale-95 cursor-pointer uppercase tracking-wide border-2 border-amber-300">
+          ✨ Order via App Now ➔
         </button>
       </div>
     </section>
 
     <!-- SEARCH & FILTERS BAR -->
-    <div class="bg-white border-2 border-orange-100 rounded-[28px] p-4 sm:p-5 shadow-md space-y-4">
+    <div class="bg-white border-2 border-amber-200 rounded-[28px] p-4 sm:p-5 shadow-md space-y-4">
       <div class="flex flex-col sm:flex-row gap-3 items-center">
         <!-- Search Input -->
         <div class="relative flex-1 w-full">
-          <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-orange-500 text-base">🔍</span>
-          <input type="text" id="search-input" placeholder="Search dishes, hotel names, or cuisines..." oninput="handleSearch(this.value)" class="w-full bg-orange-50/50 border-2 border-orange-200 rounded-2xl pl-11 pr-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-orange-500 transition font-bold">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-amber-600 text-base">🔍</span>
+          <input type="text" id="search-input" placeholder="Search royal dishes, partner hotels, or cuisines..." oninput="handleSearch(this.value)" class="w-full bg-amber-50/40 border-2 border-amber-200 rounded-2xl pl-11 pr-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 transition font-bold">
         </div>
         <!-- Veg Toggle Button -->
-        <button onclick="toggleVegMode()" id="veg-btn" class="w-full sm:w-auto px-5 py-3 rounded-2xl text-xs font-black flex items-center justify-center space-x-2 transition border-2 cursor-pointer bg-white text-emerald-700 border-orange-200 hover:bg-emerald-50 shrink-0 shadow-sm">
+        <button onclick="toggleVegMode()" id="veg-btn" class="w-full sm:w-auto px-5 py-3 rounded-2xl text-xs font-black flex items-center justify-center space-x-2 transition border-2 cursor-pointer bg-white text-emerald-700 border-amber-200 hover:bg-emerald-50 shrink-0 shadow-sm">
           <span>🥗 Pure Veg Mode</span>
           <span id="veg-dot" class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
         </button>
@@ -145,23 +172,23 @@
 
       <!-- QUICK FILTERS CHIPS -->
       <div class="flex items-center space-x-2.5 overflow-x-auto scrollbar-none pt-1">
-        <button onclick="filterByQuery('')" class="px-4 py-2 rounded-xl text-xs font-black bg-orange-500 text-white border-2 border-orange-500 shrink-0 shadow-sm">✨ All Items</button>
-        <button onclick="filterByQuery('Dosa')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-orange-50 text-orange-800 border-2 border-orange-200 hover:bg-orange-100 shrink-0 transition">🥞 Dosa</button>
-        <button onclick="filterByQuery('Idli')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-orange-50 text-orange-800 border-2 border-orange-200 hover:bg-orange-100 shrink-0 transition">🍛 Idli</button>
-        <button onclick="filterByQuery('Biriyani')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-orange-50 text-orange-800 border-2 border-orange-200 hover:bg-orange-100 shrink-0 transition">🍗 Biriyani</button>
-        <button onclick="filterByQuery('Coffee')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-orange-50 text-orange-800 border-2 border-orange-200 hover:bg-orange-100 shrink-0 transition">☕ Coffee</button>
-        <button onclick="filterByQuery('Pizza')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-orange-50 text-orange-800 border-2 border-orange-200 hover:bg-orange-100 shrink-0 transition">🍕 Pizza</button>
-        <button onclick="filterByQuery('Burger')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-orange-50 text-orange-800 border-2 border-orange-200 hover:bg-orange-100 shrink-0 transition">🍔 Burger</button>
+        <button onclick="filterByQuery('')" class="px-4 py-2 rounded-xl text-xs font-black bg-amber-500 text-slate-950 border-2 border-amber-500 shrink-0 shadow-sm">✨ All Royal Items</button>
+        <button onclick="filterByQuery('Dosa')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-amber-50 text-amber-900 border-2 border-amber-200 hover:bg-amber-100 shrink-0 transition">🥞 Dosa</button>
+        <button onclick="filterByQuery('Idli')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-amber-50 text-amber-900 border-2 border-amber-200 hover:bg-amber-100 shrink-0 transition">🍛 Idli</button>
+        <button onclick="filterByQuery('Biriyani')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-amber-50 text-amber-900 border-2 border-amber-200 hover:bg-amber-100 shrink-0 transition">🍗 Biriyani</button>
+        <button onclick="filterByQuery('Coffee')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-amber-50 text-amber-900 border-2 border-amber-200 hover:bg-amber-100 shrink-0 transition">☕ Coffee</button>
+        <button onclick="filterByQuery('Pizza')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-amber-50 text-amber-900 border-2 border-amber-200 hover:bg-amber-100 shrink-0 transition">🍕 Pizza</button>
+        <button onclick="filterByQuery('Burger')" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-amber-50 text-amber-900 border-2 border-amber-200 hover:bg-amber-100 shrink-0 transition">🍔 Burger</button>
       </div>
     </div>
 
     <!-- CATALOG HEADER -->
     <div class="flex items-center justify-between px-1">
       <h3 class="text-base sm:text-lg font-black tracking-tight text-slate-950 flex items-center space-x-2 uppercase">
-        <span>🔥</span>
-        <span>Available Food Catalog & Partner Hotels</span>
+        <span>👑</span>
+        <span>Available Royal Food Catalog & Partner Hotels</span>
       </h3>
-      <span id="dish-count" class="text-xs bg-orange-100 text-orange-800 font-black px-4 py-1.5 rounded-full border-2 border-orange-200 shadow-sm">Loading items...</span>
+      <span id="dish-count" class="text-xs bg-amber-100 text-amber-900 font-black px-4 py-1.5 rounded-full border-2 border-amber-200 shadow-sm">Loading items...</span>
     </div>
 
     <!-- FOOD CATALOG GRID -->
@@ -171,34 +198,13 @@
 
   </main>
 
-  <!-- STICKY FOOTER -->
-  <footer class="fixed bottom-0 left-0 right-0 bg-slate-950 text-white p-3.5 sm:p-4 z-30 shadow-[0_-10px_25px_rgba(0,0,0,0.3)] border-t-2 border-orange-500/40">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 px-2 sm:px-4">
-      <div class="flex items-center space-x-3 text-center sm:text-left">
-        <div class="w-10 h-10 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl flex items-center justify-center text-white font-black shrink-0 text-lg shadow">⚡</div>
-        <div>
-          <p class="text-xs sm:text-sm font-black text-white">Want to order your favorite meals?</p>
-          <p class="text-[10px] sm:text-xs text-orange-300 font-bold">Download BuyBrigg on Google Play or use our iPhone web app.</p>
-        </div>
-      </div>
-      <div class="flex items-center space-x-2.5 w-full sm:w-auto justify-center">
-        <a href="https://play.google.com/store/apps/details?id=com.buybrigg.app&hl=en" target="_blank" rel="noopener" class="bg-gradient-to-r from-red-500 to-orange-500 text-white font-black text-xs px-4 py-2.5 rounded-xl shadow transition flex items-center space-x-1.5">
-          <span>▶️</span><span>Google Play</span>
-        </a>
-        <a href="https://food-30d.pages.dev" target="_blank" rel="noopener" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-extrabold text-xs px-4 py-2.5 rounded-xl transition flex items-center space-x-1.5">
-          <span>🍎</span><span>iPhone App</span>
-        </a>
-      </div>
-    </div>
-  </footer>
-
   <!-- JAVASCRIPT LOGIC -->
   <script>
     let allFoods = [];
     let isVeg = false;
     let currentSearch = '';
 
-    // Trigger sliding top announcement and side toast when opening page
+    // Trigger sliding top announcement, corner popup, side toast, and top-right alert on page load
     window.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         const topBar = document.getElementById('top-announcement');
@@ -209,6 +215,16 @@
         const toast = document.getElementById('side-toast');
         if (toast) toast.classList.remove('-translate-x-96');
       }, 1200);
+
+      setTimeout(() => {
+        const popup = document.getElementById('corner-popup');
+        if (popup) popup.classList.remove('translate-y-96');
+      }, 2000);
+
+      setTimeout(() => {
+        const alertBox = document.getElementById('top-right-alert');
+        if (alertBox) alertBox.classList.remove('translate-x-96');
+      }, 2600);
     });
 
     async function fetchFoods() {
@@ -218,7 +234,7 @@
         allFoods = Array.isArray(data) ? data : (data.foods || data.data || data.items || []);
         renderFoods();
       } catch (err) {
-        document.getElementById('food-grid').innerHTML = '<div class="col-span-full bg-white border-2 border-red-200 rounded-[28px] p-8 text-center space-y-2 shadow-md"><p class="text-sm font-bold text-red-600">Failed to load live catalog from server. Please check your network connection.</p></div>';
+        document.getElementById('food-grid').innerHTML = '<div class="col-span-full bg-white border-2 border-red-200 rounded-[28px] p-8 text-center space-y-2 shadow-md"><p class="text-sm font-bold text-red-600">Failed to load royal catalog from server. Please check your network connection.</p></div>';
       }
     }
 
@@ -242,7 +258,7 @@
       document.getElementById('dish-count').innerText = `${filtered.length} Dishes Available`;
 
       if (filtered.length === 0) {
-        grid.innerHTML = '<div class="col-span-full bg-white border-2 border-orange-200 rounded-[28px] p-12 text-center space-y-2 shadow-md"><p class="text-base font-black text-slate-800">No food items found matching your filter</p></div>';
+        grid.innerHTML = '<div class="col-span-full bg-white border-2 border-amber-200 rounded-[28px] p-12 text-center space-y-2 shadow-md"><p class="text-base font-black text-slate-800">No royal food items found matching your filter</p></div>';
         return;
       }
 
@@ -253,13 +269,13 @@
         const rating = item.rating !== undefined ? Number(item.rating).toFixed(1) : '4.8';
 
         return `
-          <article onclick="openDownloadModal()" class="bg-white border-2 border-orange-200 rounded-[28px] p-4 sm:p-5 shadow-lg hover:shadow-xl transition transform hover:scale-[1.01] cursor-pointer flex flex-col justify-between group">
+          <article onclick="openDownloadModal()" class="bg-white border-2 border-amber-200 rounded-[28px] p-4 sm:p-5 shadow-lg hover:shadow-xl transition transform hover:scale-[1.01] cursor-pointer flex flex-col justify-between group">
             <div class="space-y-3">
               <!-- Image & Rating Badge -->
-              <div class="relative w-full h-44 rounded-2xl overflow-hidden bg-orange-50 border-2 border-orange-100 flex items-center justify-center text-4xl shadow-inner">
+              <div class="relative w-full h-44 rounded-2xl overflow-hidden bg-amber-50 border-2 border-amber-100 flex items-center justify-center text-4xl shadow-inner">
                 ${item.image ? `<img src="${item.image}" alt="${dishName} from ${hotelName}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">` : '🍲'}
-                <div class="absolute top-2.5 left-2.5 bg-white/90 backdrop-blur-md text-orange-900 text-[10px] font-black px-2.5 py-1 rounded-xl border border-orange-200 shadow-sm">
-                  🏨 ${hotelName}
+                <div class="absolute top-2.5 left-2.5 bg-white/90 backdrop-blur-md text-amber-900 text-[10px] font-black px-2.5 py-1 rounded-xl border border-amber-200 shadow-sm">
+                  👑 ${hotelName}
                 </div>
                 <div class="absolute bottom-2.5 right-2.5 bg-amber-500 text-white text-xs font-black px-2 py-0.5 rounded-lg shadow">
                   ⭐ ${rating}
@@ -268,15 +284,15 @@
 
               <!-- Title & Price -->
               <div class="space-y-1">
-                <h3 class="font-black text-slate-950 text-sm sm:text-base line-clamp-1 group-hover:text-orange-600 transition">${dishName}</h3>
-                <p class="text-base font-black text-orange-600 font-mono">₹${price}</p>
+                <h3 class="font-black text-slate-950 text-sm sm:text-base line-clamp-1 group-hover:text-amber-600 transition">${dishName}</h3>
+                <p class="text-base font-black text-amber-600 font-mono">₹${price}</p>
               </div>
             </div>
 
             <!-- Action Button -->
             <div class="pt-4">
-              <button class="w-full bg-gradient-to-r from-red-500 to-orange-500 text-white font-black text-xs py-3 rounded-xl shadow-md transition flex items-center justify-center space-x-2 pointer-events-none">
-                <span>Order in App</span>
+              <button class="w-full bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-black text-xs py-3 rounded-xl shadow-md transition flex items-center justify-center space-x-2 pointer-events-none">
+                <span>Order Royal Feast in App</span>
                 <span>🛒</span>
               </button>
             </div>
@@ -301,7 +317,7 @@
         btn.className = 'w-full sm:w-auto px-5 py-3 rounded-2xl text-xs font-black flex items-center justify-center space-x-2 transition border-2 cursor-pointer bg-emerald-600 text-white border-emerald-500 shadow-md';
         dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-300';
       } else {
-        btn.className = 'w-full sm:w-auto px-5 py-3 rounded-2xl text-xs font-black flex items-center justify-center space-x-2 transition border-2 cursor-pointer bg-white text-emerald-700 border-orange-200 hover:bg-emerald-50 shadow-sm';
+        btn.className = 'w-full sm:w-auto px-5 py-3 rounded-2xl text-xs font-black flex items-center justify-center space-x-2 transition border-2 cursor-pointer bg-white text-emerald-700 border-amber-200 hover:bg-emerald-50 shadow-sm';
         dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-500';
       }
       renderFoods();
